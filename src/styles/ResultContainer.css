@@ -1,0 +1,12 @@
+.resultContainer{
+    width: 100%;
+    height: 80vh;
+    border: 1px solid white;
+}
+
+.tableContainer{
+    width: 100%;
+    height: 20vh;
+    border: 1px solid red;
+    color: white;
+}

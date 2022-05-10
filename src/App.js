@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import './styles/QueryEditorContainer.css';
+import './styles/ResultContainer.css';
+
+import SideNav from './components/SideNav';
+import ResultContainer from './components/ResultContainer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SideNav></SideNav>
+      <div className='contentArea'>
+        <div className='queryEditorContainer'>Query</div>
+        <div className='resultContainer'>
+          ResultContainer
+          <ResultContainer></ResultContainer>
+        </div>
+      </div>
     </div>
   );
 }
